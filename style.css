@@ -1,13 +1,13 @@
 body {
     margin: 0;
-    background: linear-gradient(to right, lightgrey, grey);
+    /* background: linear-gradient(to right, lightgrey, grey); */
 }
 .home {
-    /* background-image: url("assets/balloonChair.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 100%; */
-    color: #555555;
+    background-image: url("assets/pencilShavings.jpg");
+    /* background-repeat: no-repeat;
+    background-position: center center; */
+    /* background-size: 100%; */
+    color: #cccccc;
 }
 
 header {
@@ -18,8 +18,9 @@ header {
   justify-content: center;
 }
 .container-fluid {
+    padding-top: 20px;
     display: grid;
-    max-width: 80%;
+    max-width: 70%;
 }
 .logo1 {
     font-family: 'Tangerine';
@@ -94,6 +95,11 @@ nav a {
     transition:all 0.2s;
     text-transform: uppercase;
   }
+
+nav a:hover {
+    text-decoration: none;
+    color: darkmagenta;
+}
 
 img {
     width: 150px;
