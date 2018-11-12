@@ -18,12 +18,13 @@ header {
   justify-content: center;
 }
 .container {
+    margin: auto;
     padding-top: 20px;
     /* display: grid; */
     max-width: 70%;
-    align-content: center;
+    /* align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* text-align: center; */
 }
 .logo1 {
