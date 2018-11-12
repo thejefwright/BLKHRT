@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+  <Header>
+    <div class="slant"></div>
+  <a href="index.html"><h1> BLK HRT DEV</h1></a>
+  </Header>
+
+  <section class="title">
+    <div class="middle"></div>
+    <h2>Dope Websites</h2>
+  </section>
+  
+  <section class="content">
+    <div class="slant2"></div>
+    <p>I make the dopest websites</p>
+  </section>
+  </div>
+
+  <style>
+  body {
+    background: lightblue;
+    margin: 0;
+  }
+
+  header {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    }
+  .title {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    }
+  .content {
+    position: relative;
+    height: 400px;
+    /* overflow: hidden; */
+    }
+  .slant {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border-bottom: 1px solid darkgrey; */
+    background-color: pink;
+    transform: skewY(-8deg);
+    transform-origin: left;
+  }
+  .slant2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: pink;
+    transform: skewY(8deg);
+    /* transform-origin: top left; */
+
+  }
+
+  h1 {
+    padding: 100px;
+    text-align: center;
+  }
+  h2 {
+    padding: 100px;
+    text-align: center;
+  }
+  p {
+    padding: 200px;
+    text-align: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  header h1 {
+    position: relative;
+    color: black;
+  }
+  section p {
+    position: relative;
+    color: black;
+  }
+  </style>
+</body>
+</html>
