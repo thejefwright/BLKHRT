@@ -21,6 +21,7 @@ header {
     padding-top: 20px;
     display: grid;
     max-width: 70%;
+    align-content: center;
 }
 .logo1 {
     font-family: 'Tangerine';
