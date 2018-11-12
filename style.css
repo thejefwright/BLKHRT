@@ -23,6 +23,7 @@ header {
     max-width: 70%;
     align-content: center;
     justify-content: center;
+    align-items: center;
     /* text-align: center; */
 }
 .logo1 {
