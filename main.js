@@ -1,8 +1,8 @@
-const button = document.querySelector("button");
+// const button = document.querySelector("button");
 
-button.addEventListener("click", function(){
-      window.open("contact.html") ;
-}) 
+// button.addEventListener("click", function(){
+//       window.open("contact.html") ;
+// }) 
 
 const nav = document.querySelector('.main');
   const topOfNav = nav.offsetTop;

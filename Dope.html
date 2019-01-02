@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>BLK HRT | Dope Websites</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
 </head>
 <body>
   <header>
     <nav class="nav" id="nav">
       <ul>
         <li class="logo">BLKHRTDEV</li>
-        <li class="active"><a href="">Home</a></li>
+        <li><a href="">Home</a></li>
         <li><a href="">Work</a></li>
         <li><a href="">About</a></li>
         <li><a href="">Contact</a></li>
@@ -21,36 +21,48 @@
   </header>
   <div class="wrapper">
     <main>
-      <div class="slant"></div>
+      <div class="slant">
       <a href="index.html"><h1> BLK HRT DEV</h1></a>
+    </div>
     </main>
     
     <section class="title">
-      <div class="middle"></div>
-      <h2>Dope Websites</h2>
+      <div class="middle">
+      <h2>I Make
+        <span class="appear">
+          <span class="adj dope">Dope</span>
+          <span class="adj engaging">Engaging</span>
+          <span class="adj elegant">Elegant</span>
+          <span class="adj modern">Modern</span>
+          <span class="adj sick">The Sickest</span>
+        </span>
+          Websites
+      </h2>
+      </div>
     </section>
     
     <section class="content">
-      <div class="slant2"></div>
+      <div class="slant2">
       <p>I make the dopest websites</p>
+      </div>
     </section>
   </div>
   
 <style>
 body {
-  background: lightblue;
+  background: red;
   margin: 0;
 }
 
 main {
   position: relative;
-  height: 400px;
-  overflow: hidden;
+  /* height: 400px; */
+  /* overflow: hidden; */
 }
 header {
   width: 100%;
   position: fixed;
-  z-index: 999;
+  z-index: 100;
   top: 0px;
 }
 nav {
@@ -77,40 +89,36 @@ nav a:hover {
   background-color: lightblue;
 }
 
-  
-.title {
-  position: relative;
-  height: 400px;
-  overflow: hidden;
+.middle {
+  background: lightblue;
+  padding: 20vh 0;
 }
-.content {
-  position: relative;
-  height: 400px;
-  /* overflow: hidden; */
-}
+
 .slant {
-  position: absolute;
-  top: 0;
+  position: relative;
+  /*top: 0;
   bottom: 0;
   right: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
-  height: 100%;
-  /* border-bottom: 1px solid darkgrey; */
+  /* height: 600px; */
+  padding: 20vh 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
   background-color: pink;
-  transform: skewY(-8deg);
-  transform-origin: left;
+  margin-bottom: -10vw;
+  z-index: 10;
+  /* transform: skewY(-8deg);
+  transform-origin: left; */
 }
 .slant2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  position: relative;
+  clip-path: polygon(0 0, 100% calc(+10vw), 100% 100% ,0 100%);
   width: 100%;
-  height: 100%;
+  padding: 20vh 0;
   background-color: pink;
-  transform: skewY(8deg);
+  margin-top: -10vw;
+  z-index: 100;
+  /* transform: skewY(8deg); */
   /* transform-origin: top left; */
 
 }
@@ -123,6 +131,13 @@ h2 {
   padding: 100px;
   text-align: center;
 }
+.adj{
+  display: none;
+}
+.active{
+  display: inline-block;
+}
+
 p {
   padding: 200px;
   text-align: center;
@@ -139,6 +154,16 @@ section p {
   color: black;
 }
 </style>
-  <script src="main.js"></script>
+  <script>
+  const random = Math.floor(Math.random(1,6));
+  const appear = document.querySelectorAll("span.adj");
+  console.log(appear);  
+    
+    appear.forEach((wordUp) => {
+    wordUp.classList.toggle('active');
+  });
+  
+    
+</script>
 </body>
 </html>

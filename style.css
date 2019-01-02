@@ -1,25 +1,38 @@
 body {
     margin: 0;
-    /* background: linear-gradient(to right, lightgrey, grey); */
 }
 .home {
     background-image: url("assets/pencilShavings.jpg");
-    /* background-repeat: no-repeat;
-    background-position: center center; */
-    /* background-size: 100%; */
-    color: #cccccc;
+    background-size: 100%;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
-header {
-  text-align: center;
-  height:25vh;
-  display:flex;
-  align-items:center;
-  justify-content: center;
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.logoimg {
+    animation: heartbeat 2s infinite;
+}
+@keyframes heartbeat{
+    15% {transform: scale(1.2);}
+    30% {transform: scale(1);}
+    45% {transform: scale(1.2);}
+    60% {transform: scale(1);}
+    100% {transform: scale(1);}
+}
+.logo1 {
+    text-align: center;
+    text-justify: ;
+    font-weight: 100;
 }
 .container {
+    background-color: rgba(0,0,0, .6);
+    color: lightgrey;
     margin: auto;
-    padding-top: 20px;
+    padding: 20px;
     /* display: grid; */
     max-width: 70%;
     /* align-content: center;
@@ -27,16 +40,7 @@ header {
     align-items: center; */
     /* text-align: center; */
 }
-.logo1 {
-    font-family: 'Tangerine';
-    font-weight: 100;
-    font-size: 56px;
-    text-shadow:6px 6px 10px #aaaaaa;
-    transform: rotate(-10deg);
-    transition-delay: 3s;
-    transition-duration : 1s;
-    transition-property: all;
-}
+
 .content {
     /* background-color: rgba(255, 255, 255, .8); */
     max-width: 900px;
@@ -73,7 +77,7 @@ nav ul {
     display:flex;
   }
 nav li {
-    flex:1;
+    /* flex:1; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -94,16 +98,21 @@ li.logo {
   }
 nav a {
     text-decoration: none;
-    padding:10px;
+    padding: 10px 20px;
     display: inline-block;
     color: white;
-    transition:all 0.2s;
+    transition:all 0.5s;
     text-transform: uppercase;
   }
 
 nav a:hover {
+    transition: 1s;
     text-decoration: none;
     color: darkmagenta;
+    border-bottom: 1px solid darkmagenta;
+}
+.right {
+    margin-left: auto;
 }
 
 img {
@@ -173,7 +182,7 @@ textarea {
     font-size: 24px;
 }
 footer {
-    padding-top: 100px;
-    margin-top: 500px;
+    /* padding-top: 100px; */
+    margin-top: 100px;
     text-align: center;
 }
