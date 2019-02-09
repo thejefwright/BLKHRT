@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+main {
+  position: relative;
+  /* height: 400px; */
+  /* overflow: hidden; */
+}
+/* header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+} */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: pink;
+}
+nav ul {
+  display: flex;
+  /* margin: 10px auto; */
+  padding: 0;
+  list-style: none;
+  /* text-align: left; */
+}
+
+nav li {
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+nav a {
+  padding: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: lightblue;
+}
+
+.middle {
+  background: lightblue;
+  padding: 20vh 0;
+}
+
+.slant {
+  position: relative;
+  /*top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; */
+  width: 100%;
+  /* height: 600px; */
+  padding: 20vh 0;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
+  background-color: pink;
+  margin-bottom: -10vw;
+  z-index: 10;
+  /* transform: skewY(-8deg);
+  transform-origin: left; */
+}
+.slant2 {
+  position: relative;
+  clip-path: polygon(0 0, 100% calc(+10vw), 100% 100% ,0 100%);
+  width: 100%;
+  padding: 20vh 0;
+  background-color: pink;
+  margin-top: -10vw;
+  z-index: 10;
+  /* transform: skewY(8deg); */
+  /* transform-origin: top left; */
+
+}
+
+h1 {
+  padding: 100px;
+  text-align: center;
+}
+h2 {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+.adj{
+  display: none;
+}
+.active{
+  display: inline-block;
+}
+
+p {
+  padding: 200px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+main h1 {
+  position: relative;
+  color: black;
+}
+section p {
+  position: relative;
+  color: black;
+}
+
+#typed-strings {
+  display: none;
+}
+.typed-cursor {
+  color: darkred;
+  font-weight: 100;
+}
+.typed-cursor .typed-cursor--blink {
+  animation: typedjsBlink .9s infinite;
+}
