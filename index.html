@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Black Heart Development</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Tangerine" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BLK HRT | Dope Websites</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="dope.css" />
 </head>
-<body class="home">
-
-    
-    <nav class="main">
-        <ul>
-            <li class="logo"><a href="#">BLKHRT</a></li>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a href="Dope.html">About</a></li>
-            <li><a href="work.html">work</a></li>
-            <li class="right"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="wrapper">   
-            <div><img class=logoimg src="assets/BlackHeartv3.png"></div>
-            <div><h1 class="logo1">Black Heart Development</h1></div>
+<body>
+  <nav class="nav" id="nav">
+    <ul>
+     <li class="logo"><a href="">BLKHRTDEV</a></li>
+    </ul>
+    <ul class="menu">
+      <li><a href="">Home</a></li>
+      <li><a href="">Work</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="wrapper">
+    <main>
+      <div class="slant">
+      <a class="h1" href=""><h1>Black Heart Creative</h1></a>
+      <h3>Web Development</h3>
+      <h2>I make
+        <span id="typed">pretty alright</span> websites
+    </h2>
     </div>
-
+    </main>
     
-
-
-    <div class="container">
-            <p>At Black Heart Development we build stuff. Mostly that stuff is websites. 
-        Sometimes that stuff is friendships, but mostly it's websites.</p>
-        
-         <p>Whether you need a single page to show off your new boots, several pages to showcase your hot stuff because you're a gifted artist type, or you want to sell jam that you put into mason jars. We can build it for you to let you live out your dreams of becoming internet rich & famous. We can even make you a logo. We can even make links to your facebook page! </p>
-        
-       <p> A few things to note if you're interested in having us build your website:</p>
-        
-        <p>We can work with a variety of budgets and are happy to scale our services to meet your needs and get your site launched fast.  
-        We work in a variety of platforms (Squarespace, Shopify, Wordpress) that can get a site up and running quickly. We will also build out custom coded sites, also very quickly. We can help determine what would be the best fit for your site and your budget for the build and the long term. 
-        Another thing we make is jokes. We like making jokes and having fun. Do you like fun? Us too, let's work together. 
-        Use the button below to send us an email about you and the site you want and we'll get it started. </p>
-        
-         
-        
-        <p>Thanks for your interest,</p>
-        
-        <p> - Blk Hrt Dev</p>
-    </div>
+    <section class="title">
+      <!-- typed.js -->
+      <div id="typed-strings">
+        <span>pretty</span>
+        <p>pretty good</p>
+        <p>pretty</p>
+        <p>awesome</p>
+        <p>amazing</p>
+        <p>the sickest</p>
+        <p>the dopest</p>
+        <p>engaging, modern, beautiful</p>
+      </div>
+      <!-- end typed.js -->
+      
+      <div class="middle">
+        <h2>I Make Websites.</h2>
+        <h2>Fast.</h2>
+      </div>
+    </section>
     
-    <div>
-            <button onclick="location.href='/contact.html'" id="btn" class="btn">Call me, Maybe?</button>
-            
-    </div>
-<footer>
-    <H3>This is the end.</H3>
-</footer>
-    
+    <section class="content">
+      <div class="slant2">
+      <!-- <p>I make dope websites</p> -->
+      </div>
+    </section>
+  </div>
+  
+  
+<script>
+
+// import Typed from 'typed.js';
+var typed = new Typed("#typed", {
+  stringsElement: '#typed-strings',
+  typeSpeed: 60,
+  backSpeed: 60,
+  smartBackspace: true,
+  startDelay: 3000,
+  showCursor: false,
+  loop: false
+});
+  
+</script>
+
 </body>
 </html>

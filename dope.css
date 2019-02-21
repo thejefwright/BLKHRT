@@ -18,9 +18,12 @@ body {
 }
 .menu li{
   border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
 }
 .menu li:hover {
   border-bottom: 2px solid whitesmoke;
+  border-left: 2px solid whitesmoke;
 }
 .menu a {
   color: inherit;
@@ -84,7 +87,7 @@ h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 100;
   font-size: 4em;
-  animation: 1s ease-in .5s 1 slideInFromLeft;
+  animation: 1.5s ease-in .5s 1 slideInFromLeft;
 }
 
 .h1 {
