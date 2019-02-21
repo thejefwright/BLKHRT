@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
   <link rel="stylesheet" type="text/css" media="screen" href="dope.css" />
+  <script>
+    function hide() {
+     document.querySelector('h1').classList.remove('preload');
+   };
+   window.onload = hide;
+  </script>
 </head>
 <body>
   <nav class="nav" id="nav">
@@ -23,7 +29,7 @@
   <div class="wrapper">
     <main>
       <div class="slant">
-      <a class="h1" href=""><h1>Black Heart Creative</h1></a>
+      <a class="h1" href=""><h1 class="preload">Black Heart Creative</h1></a>
       <h3>Web Development</h3>
       <h2>I make
         <span id="typed">pretty alright</span> websites
@@ -60,8 +66,8 @@
   
   
 <script>
-
-// import Typed from 'typed.js';
+ 
+import Typed from 'typed.js';
 var typed = new Typed("#typed", {
   stringsElement: '#typed-strings',
   typeSpeed: 60,
