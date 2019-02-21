@@ -2,61 +2,56 @@ body {
   margin: 0;
 }
 
-main {
-  position: relative;
-  /* height: 400px; */
-  /* overflow: hidden; */
-}
-/* header {
-  width: 100%;
+.nav {
   position: fixed;
-  z-index: 100;
-  top: 0px;
-} */
-nav {
+  width: 100%;
+  z-index: 1;
+  background-color: pink;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  background: pink;
-}
-nav ul {
-  display: flex;
-  /* margin: 10px auto; */
-  padding: 0;
-  list-style: none;
-  /* text-align: left; */
+  align-items: center;
 }
 
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
+.menu {
+  display: flex;
+  margin-right: 30px;
 }
-nav a {
-  padding: 10px;
+.menu li{
+  border-bottom: 2px solid transparent;
+}
+.menu li:hover {
+  border-bottom: 2px solid whitesmoke;
+}
+.menu a {
+  color: inherit;
   text-decoration: none;
+  padding: 3px 10px;
 }
-nav a:hover {
-  background-color: lightblue;
+#nav ul {
+  list-style: none;
+}
+.logo a {
+  padding: 3px 10px;
+  text-decoration: none;
+  color: inherit;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif  
+}
+.nav li {
+  margin-bottom: 8px;
+  margin-left: 10px;
 }
 
 .middle {
   background: lightblue;
   padding: 20vh 0;
 }
-
 .slant {
   position: relative;
-  /*top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0; */
   width: 100%;
-  /* height: 600px; */
   padding: 20vh 0;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0 100%);
   background-color: pink;
   margin-bottom: -10vw;
-  z-index: 10;
   /* transform: skewY(-8deg);
   transform-origin: left; */
 }
@@ -67,15 +62,39 @@ nav a:hover {
   padding: 20vh 0;
   background-color: pink;
   margin-top: -10vw;
-  z-index: 10;
   /* transform: skewY(8deg); */
   /* transform-origin: top left; */
 
 }
-
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  90% {
+    transform: translateX(10%)
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 h1 {
-  padding: 100px;
+  color: black;
+  padding: 10px;
   text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+  font-size: 4em;
+  animation: 1s ease-in .5s 1 slideInFromLeft;
+}
+
+.h1 {
+  text-decoration: none;
+}
+h3 {
+  padding-top: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 h2 {
   position: relative;
@@ -83,30 +102,8 @@ h2 {
   padding-bottom: 100px;
   text-align: center;
 }
-.adj{
-  display: none;
-}
-.active{
-  display: inline-block;
-}
 
-p {
-  padding: 200px;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-}
-main h1 {
-  position: relative;
-  color: black;
-}
-section p {
-  position: relative;
-  color: black;
-}
-
+/* ******** typed.js ******** */
 #typed-strings {
   display: none;
 }
@@ -117,3 +114,4 @@ section p {
 .typed-cursor .typed-cursor--blink {
   animation: typedjsBlink .9s infinite;
 }
+/* ******** end typed.js ******** */
